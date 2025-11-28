@@ -9,7 +9,7 @@ const Navbar = () => {
   const location = false;
   return (
     <div className="bg-white py-3 shadow-2xl">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* logo section */}
         <div className="flex gap-7 items-center">
           <Link to="/">
@@ -87,7 +87,7 @@ const Navbar = () => {
           </Link>
           <div>
             <SignedOut>
-              <SignInButton className="bg-red-500 text-white py-1 px-5 rounded-full cursor-pointer" />
+              <SignInButton className="bg-red-500 text-white py-1 px-5 rounded-full cursor-pointer " />
             </SignedOut>
             <SignedIn>
               <UserButton />

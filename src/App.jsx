@@ -6,8 +6,20 @@ import About from './pages/About'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Navbar from './Components/Navbar'
-
+import { useEffect } from 'react'
 const App = () => {
+
+  const getLocation = async ()=>{
+    navigator.geolocation.getCurrentPosition(pos=>{
+const {latitude,longitude} = pos.coords
+console.log(latitude,longitude)
+    })
+  }
+  useEffect(()=>{
+    getLocation()
+  },[])
+
+
   return (
       <BrowserRouter>
       <Navbar/>
