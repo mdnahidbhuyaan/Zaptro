@@ -7,12 +7,21 @@ import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Navbar from './Components/Navbar'
 import { useEffect } from 'react'
+import axios from 'axios'
 const App = () => {
 
   const getLocation = async ()=>{
-    navigator.geolocation.getCurrentPosition(pos=>{
+    navigator.geolocation.getCurrentPosition(async pos=>{
 const {latitude,longitude} = pos.coords
 console.log(latitude,longitude)
+const url = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+try {
+  const location = await axios.get(url)
+  console.log(location)
+} catch (error) {
+  console.log(error)
+}
+
     })
   }
   useEffect(()=>{
