@@ -26,6 +26,7 @@ const Navbar = () => {
             <FaCaretDown />
           </div>
         </div>
+        <h1>Home</h1>
         {/* menu section */}
 
         <nav className="flex gap-7 items-center">
