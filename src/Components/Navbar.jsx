@@ -6,7 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
-  const location = false;
+
   return (
     <div className="bg-white py-3 shadow-2xl">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
             <FaCaretDown />
           </div>
         </div>
-        <h1>Home</h1>
+    
         {/* menu section */}
 
         <nav className="flex gap-7 items-center">
