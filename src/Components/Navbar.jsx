@@ -19,6 +19,7 @@ const Navbar = () => {
             </h1>
             <h2>hello</h2>
             <h2>hello</h2>
+            <h2>hello</h2>
           </Link>
           <div className="flex gap-1 items-center cursor-pointer text-gray-700">
             <MapPinIcon className="text-red-500" />
